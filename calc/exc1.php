@@ -9,19 +9,32 @@
 </head>
 
 <body>
-    <div>
-        <form action="example6.php" method="POST">
-            <input type="text" name="num1"><select name="">
-                <option value=""></option>
-                <option value="">*</option>
-                <option value="">-</option>
-                <option value="">+</option>
-                <option value="">% </option>
-            </select>
-            <input type="text" name="num2">
-            <input type="submit" value="OK">
-        </form>
-    </div>
+    <?php
+    //print_r($_POST);
+
+    $a = $_POST['num1'];
+    $b = $_POST['num2'];
+
+    switch ($_POST['s']) {
+        case 2:
+            $c = $a - $b;
+            break;
+        case 3:
+            $c = $a * $b;
+            break;
+        case 4:
+            $c = $a / $b;
+            break;
+        case 1:
+        default:
+            $c = $a + $b;
+            break;
+    }
+    echo $str = "$c" . "\n";
+    $fp = fopen("new.txt", "a+");
+    fwrite($fp, $a);
+    fclose($fp);
+    ?>
 </body>
 
 </html>
