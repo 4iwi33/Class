@@ -10,8 +10,20 @@
 
 <body>
     <?php
+    $arr = file("new1.csv");
+    ?>
+    <h1><?= $arr[2] ?></h1>
+
+    <?
+
+
+
+
 
     ?>
+
+
+
 </body>
 
 </html>
