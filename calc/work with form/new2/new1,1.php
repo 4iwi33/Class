@@ -19,6 +19,12 @@
     foreach ($arr as $value) {
         echo "$value<br>";
     }
+    $s = 0;
+    $array = array(1, 2);
+    for ($i = 1; $i < count($arr); $i++) {
+        $sum = $sum + explode(" - ", $arr[$i])[1];
+    }
+    echo $sum;
     ?>
 </body>
 

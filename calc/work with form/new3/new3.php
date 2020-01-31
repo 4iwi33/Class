@@ -10,7 +10,21 @@
 
 <body>
     <?php
-    for ($a = 0; $a < 10; $a++) echo $a;
+    // $ind = $_POST['vot'];
+    // $arr = file("new3.csv");
+    // $buf = explode(" - ", $arr[$ind]);
+    // $buf[1] += 1;
+    // $arr[$ind] = implode(" - ", $buf) . "\n";
+    // file_put_contents("new3.csv", $arr);
+    // foreach ($arr as $value) {
+    //     echo "$value<br>";
+    // }
+    // $s = 0;
+    // $array = array(1, 2);
+    // for ($i = 1; $i < count($arr); $i++) {
+    //     $sum = $sum + explode(" - ", $arr[$i])[1];
+    // }
+    // echo $sum;
     ?>
 </body>
 
