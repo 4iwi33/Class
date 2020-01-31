@@ -19,13 +19,27 @@
     foreach ($arr as $value) {
         echo "$value<br>";
     }
-    $s = 0;
-    $array = array(1, 2);
+    ?>
+
+    <?
+    //Сумма голосов
+    $sum = 0;
     for ($i = 1; $i < count($arr); $i++) {
         $sum = $sum + explode(" - ", $arr[$i])[1];
     }
-    echo $sum;
     ?>
+
+    <h1><?= $arr[0] ?></h1>
+
+    <?
+    for ($i = 1; $i < count($arr); $i++) {
+        $buf = explode(" - ", $arr[$i]);
+        echo $buf[0] . " - " . round($buf[1] / $sum * 100) . "%<br>";
+    }
+
+
+    ?>
+
 </body>
 
 </html>
