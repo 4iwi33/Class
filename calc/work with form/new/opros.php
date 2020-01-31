@@ -10,14 +10,15 @@
 
 <body>
     <?php
-    $a = $_POST['num1'];
-    $b = $_POST['num2'];
-    $s = $_POST['num3'];
-    echo "$a";
-    echo "<br>";
-    echo "$b";
-    echo "<br>";
-    file_put_contents('opros.txt', "$a ; $b" . "\n", FILE_APPEND);
+    $i = $_POST['s'];
+   
+    $arr = explode(';', file_get_contents('opros.csv'));
+    $arr[$i]++;
+    file_put_contents('opros.csv', implode(";", $arr));
+
+    foreach($arr as $key=>$value){
+        echo "$key - $value<br>";
+    }
     ?>
 </body>
 
