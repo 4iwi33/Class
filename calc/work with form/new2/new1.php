@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form action="new1.csv" method="post">
+    <form action="" method="post">
         <?php
         $arr = file("new1.csv");
         ?>
