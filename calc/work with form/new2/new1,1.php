@@ -12,12 +12,13 @@
     <?php
     $ind = $_POST['vot'];
     $arr = file("new1.csv");
-    //print_r($arr);
     $buf = explode(" - ", $arr[$ind]);
     $buf[1] += 1;
-    $arr[$ind] = implode(" - ", $buf);
-    print_r($arr);
+    $arr[$ind] = implode(" - ", $buf) . "\n";
     file_put_contents("new1.csv", $arr);
+    foreach ($arr as $value) {
+        echo "$value<br>";
+    }
     ?>
 </body>
 
