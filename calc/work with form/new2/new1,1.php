@@ -34,7 +34,7 @@
     <?
     for ($i = 1; $i < count($arr); $i++) {
         $buf = explode(" - ", $arr[$i]);
-        echo $buf[0] . " - " . round($buf[1] / $sum * 100) . "%<br>";
+        echo $buf[0] . " - " . round($buf[1] / $sum * 100) . "<br>";
     }
 
 
