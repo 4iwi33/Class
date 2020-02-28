@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <form action="send.php" method="post">
+    <form action="send.php" method="mail">
         <input type="text" name="send">
         <input type="submit">
     </form>
