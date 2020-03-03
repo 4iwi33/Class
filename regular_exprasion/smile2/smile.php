@@ -11,5 +11,5 @@ $arr2 = [ //создаём второй массив
     '<img src="evil.png" width="30px">'
 ];
 
-echo preg_replace($arr, $arr2, $_POST['mail']);
+echo preg_replace($arr, $arr2, $_POST['mail']); //$s либо
 ?>
