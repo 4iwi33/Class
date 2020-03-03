@@ -4,7 +4,7 @@
 //{n,}	- по меньшей мере раз
 // print_r($_POST['mail']);
 $str =  $_POST['mail'];
-$pat = '/^[A-z0-9-]{1,}@[A-z0-9\-]{2,}\.\w{2,6}$/';
+$pat = '/^[a-z][0-9]{1,}@[a-z][0-9]{2,}\.\w{2,6}$/';
 if (preg_match($pat, $str)) {
     echo 'yes';
 } else {
