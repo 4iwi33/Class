@@ -1,3 +1,4 @@
+<title>bb_php</title>
 <?php
 function bbCode($text)
 {
