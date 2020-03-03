@@ -1,8 +1,6 @@
 <?php
-$arr_words = file('words.txt');//file — Читает содержимое файла и помещает его в массив
-
-
-
+$arr_words = file('words.txt'); //file — Читает содержимое файла и помещает его в массив
+// print_r($arr_words);
 foreach ($arr_words as &$word) {
     $word = trim($word);
 }
