@@ -2,9 +2,9 @@
 function bb_code($text)
 {
     $pat = [
-        '/\[b\](.*)\[\/b\]',
-        '/\[i\](.*)\[\/i\]',
-        '/\[u\](.*)\[\/u\]'
+        '/\[b\](.*)\[\/b\]/',
+        '/\[i\](.*)\[\/i\]/',
+        '/\[u\](.*)\[\/u\]/'
     ];
 
     $img = [
@@ -23,8 +23,8 @@ function smile($text) {
     ];
 
     $img = [
-        "<img src='' >",
-        "<img src='' >"
+        "<img src='smile.png' height='15'>",
+        "<img src='evil.png'  height='15'>"
 
     ];
     return preg_replace($pat, $img, $text);
