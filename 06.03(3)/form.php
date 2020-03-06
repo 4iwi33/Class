@@ -9,7 +9,7 @@
 
 <body>
     <form action="show.php" method="POST">
-    <textarea name="send" id="" cols="30" rows="10"></textarea>
+    <textarea name="send" cols="30" rows="10"></textarea>
     <input type="submit">
     </form>
 </body>
