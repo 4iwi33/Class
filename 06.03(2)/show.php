@@ -1,24 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+$s = $_POST['adress'];
+$p = $_POST['name'];
+$tut = file_get_contents($s);
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>show</title>
-</head>
-
-<body>
-
-
-
-
-
-
-
-
-
-
-
-</body>
-
-</html>
+echo preg_match_all("/" . $p . "/iu", $tut);
+?>

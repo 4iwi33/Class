@@ -9,8 +9,8 @@
 
 <body>
     <form action="show.php" method="POST">
-        <input type="text" name="url"><br>
-        <input type="text" name="email"><br>
+        <textarea name="adress" cols="30" rows="10"></textarea><br>
+        <input type="text" name="name">
         <input type="submit" value="ok">
     </form>
 </body>
