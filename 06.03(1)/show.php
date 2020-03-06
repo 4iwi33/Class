@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form</title>
+    <title>show</title>
 </head>
 
 <body>
-    <form action="first.php" method="post">
-        <input type="text" name="send">
-        <input type="submit">
-    </form>
+    <?php
+    include("fun.php");
+
+    echo url(md(htmlspecialchars($_POST['smile'])));
+
+    ?>
 </body>
 
 </html>

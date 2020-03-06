@@ -8,9 +8,10 @@
 </head>
 
 <body>
-    <form action="first.php" method="post">
-        <input type="text" name="send">
-        <input type="submit">
+    <form action="show.php" method="POST">
+        <p>Отправляем url картинки</p>
+        <textarea name="smile" cols="30" rows="10"></textarea>
+        <input type="submit" value="ok">
     </form>
 </body>
 

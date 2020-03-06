@@ -8,9 +8,10 @@
 </head>
 
 <body>
-    <form action="first.php" method="post">
-        <input type="text" name="send">
-        <input type="submit">
+    <form action="show.php" method="POST">
+        <input type="text" name="url"><br>
+        <input type="text" name="email"><br>
+        <input type="submit" value="ok">
     </form>
 </body>
 
