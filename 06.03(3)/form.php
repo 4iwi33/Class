@@ -1,8 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<?php
-preg_match_all("|<[^>]+>(.*)</[^>]+>|U", 
-    "<b>example: </b><div align=left>this is a test</div>", 
-    $out, PREG_PATTERN_ORDER);
-echo $out[0][0] . ", " . $out[0][1] . "\n";
-echo $out[1][0] . ", " . $out[1][1] . "\n";
-?>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="show.php" method="POST">
+    <textarea name="send" id="" cols="30" rows="10"></textarea>
+    <input type="submit">
+    </form>
+</body>
+
+</html>
