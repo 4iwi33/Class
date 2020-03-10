@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>  
+
 <msg>
     <text>Hello</text>
-    <name>Nick</name>
+    <name>bro</name>
     <date>Array</date>
 </msg>
 <msg>
     <text>Hello</text>
-    <name>Nick</name>
+    <name>bro</name>
     <date>Array</date>
+</msg>
+<msg>
+    <text>Hello</text>
+    <name>bro</name>
+    <date></date>
+</msg>
+<msg>
+    <text>Hello</text>
+    <name>bro</name>
+    <date>10.03.20 08-03-27</date>
 </msg>

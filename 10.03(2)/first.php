@@ -2,7 +2,7 @@
 $file = "seccond.xml";
 $a = $_POST['msg'];
 $b = $_POST['name'];
-$c = getdate();
+$c = date('d.m.y h-m-s');
 
 
 
@@ -18,4 +18,4 @@ XML;
 
 file_put_contents($file, $str, FILE_APPEND);
 
-?>
+?>  
