@@ -11,8 +11,7 @@
     <?php
     include("function.php");
 
-    $text = save_guets_book("seccond.xml", $f);
-    foreach ($text as $value) {
+    foreach (mass("seccond.xml") as $value) {
         echo '' . $value["msg"] . '<br>' . $value["name"] . '<br>' . $value["date"] . '<br>';
     }
 
