@@ -6,7 +6,7 @@ $c = date('d.m.y h-m-s');
 
 
 
-
+//сохраняем в файл XML
 $str = <<<XML
 
 <msg>
