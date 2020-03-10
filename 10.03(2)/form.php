@@ -8,6 +8,16 @@
 </head>
 
 <body>
+    <?php
+    include("function.php");
+
+    $text = save_guets_book("seccond.xml", $f);
+    foreach ($text as $value) {
+        echo '' . $value["msg"] . '<br>' . $value["name"] . '<br>' . $value["date"] . '<br>';
+    }
+
+
+    ?>
     <form action="first.php" method="post">
         <textarea name="msg" cols="30" rows="10"></textarea><br>
         <input type="text" name="name"><br>
