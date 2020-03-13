@@ -38,3 +38,12 @@ SELECT *
 FROM zptable
 Order by Profession ASC,
 ZP DESC;
+
+--формирование вывода взапроса
+
+--AS=как
+
+--запрос перевод название столбцов  на русский язык
+SELECT 
+Number AS "Номер", FIO AS "ФИО", ZP AS "Зарплата", Profession AS "Профессия" 
+FROM zptable
