@@ -37,4 +37,4 @@ Order by ZP DESC
 SELECT *
 FROM zptable
 Order by Profession ASC,
- ZP DESC;
+ZP DESC;
