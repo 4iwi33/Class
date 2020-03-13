@@ -47,3 +47,13 @@ ZP DESC;
 SELECT 
 Number AS "Номер", FIO AS "ФИО", ZP AS "Зарплата", Profession AS "Профессия" 
 FROM zptable
+
+--посчитать налог для каждого работника
+SELECT 'FIO' as 'ФИО', Profession as 'Профессия', ZP * 0.13 as 'Налоги' 
+FROM zptable
+
+
+-- чистая зп после вычета налогов
+SELECT 'FIO' as 'ФИО', Profession as 'Профессия', ZP - ZP * 0.13 as 'Чистые' 
+FROM zptable
+
