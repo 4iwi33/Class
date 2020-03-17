@@ -137,3 +137,17 @@ FROM people
 WHERE Salary>
 (SELECT AVG(Salary)
 FROM people);
+
+--найти работника с самой большой зп как его зовут?
+SELECT *
+FROM people
+WHERE Salary=
+(SELECT MAX(Salary)
+FROM people);
+
+--найти работника с самой маленькой зп как его зовут?
+SELECT *
+FROM people
+WHERE Salary=
+(SELECT MIN(Salary)
+FROM people);
