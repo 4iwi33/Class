@@ -78,8 +78,38 @@ Department IN('Driver', 'Worker')
 
 --Оператор - "LIKE"
 
+
+--
 SELECT *
 FROM people
 WHERE 
 Name LIKE 
     'Pe%r';
+
+
+--вывести вусех сотрудников которые работают в отделе название которого содержит ровно 6 символов
+SELECT *
+FROM people
+WHERE 
+Name LIKE 
+    '';
+
+--Функции Агрегирования:
+--MIN 
+--MAX
+--SUM
+--COUNT
+--AVG
+
+--Функции Агрегирования вычисляют групповые характеристики полей и таблицы
+--подсчитаем максимальную зп 
+SELECT MAX(Salary)
+FROM people;
+
+--сумарная зп
+SELECT SUM(Salary), MIN(Salary), MAX(Salary)
+FROM people;
+
+--COUNT
+SELECT COUNT(Salary)
+FROM people;
