@@ -69,3 +69,9 @@ FROM people
 WHERE Department = 'Driver'
     OR
     Department = 'Worker'
+
+-- тоже самое через in
+SELECT *
+FROM people
+WHERE
+Department IN('Driver', 'Worker')
