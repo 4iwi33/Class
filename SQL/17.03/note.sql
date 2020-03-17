@@ -61,7 +61,7 @@ BETWEEN
 300
 AND 
 400
-
+--------------------------------------------------------------------------------------------
 --Оператор - "IN"
 --находит всех сотрудников отделов  Driver или Worker
 SELECT *
@@ -76,6 +76,8 @@ FROM people
 WHERE
 Department IN('Driver', 'Worker')
 
+
+----------------------------------------------------------------------------------------------------------
 --Оператор - "LIKE"
 
 
@@ -93,7 +95,7 @@ FROM people
 WHERE 
 Name LIKE 
     '';
-
+----------------------------------------------------------------------------------------
 --Функции Агрегирования:
 --MIN 
 --MAX
@@ -113,3 +115,25 @@ FROM people;
 --COUNT
 SELECT COUNT(Salary)
 FROM people;
+
+--удалим зп со значением 300
+DELETE FROM people 
+WHERE Salary = 300;
+
+--удалим зп из  id 5
+UPDATE people SET Salary = NULL WHERE id = 5;
+SELECT COUNT(Salary)
+FROM people;
+
+
+-- 
+SELECT COUNT(*)
+FROM people;
+
+-------------------------------------------------------------------------------------
+--Вложеные запросы
+SELECT *
+FROM people
+WHERE Salary>
+(SELECT AVG(Salary)
+FROM people);
