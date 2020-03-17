@@ -62,7 +62,7 @@ BETWEEN
 AND 
 400
 
---Оператор in
+--Оператор - "IN"
 --находит всех сотрудников отделов  Driver или Worker
 SELECT *
 FROM people
@@ -75,3 +75,11 @@ SELECT *
 FROM people
 WHERE
 Department IN('Driver', 'Worker')
+
+--Оператор - "LIKE"
+
+SELECT *
+FROM people
+WHERE 
+Name LIKE 
+    'Pe%r';
