@@ -151,3 +151,7 @@ FROM people
 WHERE Salary=
 (SELECT MIN(Salary)
 FROM people);
+
+--add plugin MYSQL 
+
+--вывести инфу о сотрудниках имеющих зп больше средней зп в 'Driver'
