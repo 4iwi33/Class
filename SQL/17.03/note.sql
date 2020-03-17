@@ -42,3 +42,30 @@ WHERE price >20;
 
 --установить цену для всех конкретных товаров цену 20
 
+-----------------------------------------------------------------------------------------------------------------------
+--for People.zql
+--Оператор - "BETWEEN" 
+
+--вывести всех работников у кого зп от 300 до 450
+SELECT *
+FROM people
+WHERE Salary >= 300
+    AND
+    Salary <=450
+
+--тоже самое только с Between
+SELECT *
+FROM people
+WHERE Salary 
+BETWEEN
+300
+AND 
+400
+
+--Оператор in
+--находит всех сотрудников отделов  Driver или Worker
+SELECT *
+FROM people
+WHERE Department = 'Driver'
+    OR
+    Department = 'Worker'
