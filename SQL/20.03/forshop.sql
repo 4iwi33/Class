@@ -52,11 +52,48 @@ FROM customers
 WHERE RATING >
 ANY (SELECT RATING
 FROM customers
-WHERE CITY = 'London');
+WHERE CITY = 'Rome');
 --some
 SELECT *
 FROM customers
 WHERE RATING >
 SOME (SELECT RATING
 FROM customers
-WHERE CITY = 'London');
+WHERE CITY = 'Berlin');
+
+--вывести список заказов на сумму более 1000
+SELECT *
+FROM orders
+WHERE 
+AVG > 1000;
+
+--вывести список городов в которых живут покупатели совершившие покупку на сумму более 5000
+SELECT CITY
+FROM customers
+WHERE CNUM IN
+(SELECT CNUM
+FROM orders
+WHERE AMT > 5000);
+
+--написать запрос который выводит список городов в которых проживают клиенты из результата запроса удалить дублирующиеся города
+--DISTINCT--
+SELECT DISTINCT CITY 
+FROM customers;
+
+--
+SELECT *
+FROM salespeople
+orders
+WHERE 
+salespeople.SNUM = orders.SNUM;
+
+--объединение таблиц customers и salespeople 
+SELECT *
+FROM customers,
+salespeople 
+WHERE 
+customers.CNUM = salespeople.CNUM;
+
+--найти общую сумму заказов каждого продовца
+
+
