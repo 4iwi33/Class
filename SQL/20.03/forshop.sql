@@ -88,12 +88,22 @@ WHERE
 salespeople.SNUM = orders.SNUM;
 
 --объединение таблиц customers и salespeople 
-SELECT *
+SELECT
+    *
 FROM customers,
 salespeople 
 WHERE 
-customers.CNUM = salespeople.CNUM;
+customers.SNUM = salespeople.SNUM;
 
 --найти общую сумму заказов каждого продовца
+SELECT 
+SNAME,
+SUM(AMT)
+FROM salespeople,
+orders
+WHERE 
+salespeople.SNUM = orders.SNUM 
+GROUP BY 
+SNAME;
 
-
+--посчитать количество заказов у каждого продовца
