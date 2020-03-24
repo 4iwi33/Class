@@ -81,11 +81,12 @@ SELECT DISTINCT CITY
 FROM customers;
 
 --
-SELECT *
-FROM salespeople
-orders
+SELECT
+    *
+FROM customers,
+ orders
 WHERE 
-salespeople.SNUM = orders.SNUM;
+salespeople.CNUM = orders.CNUM;
 
 --объединение таблиц customers и salespeople 
 SELECT
