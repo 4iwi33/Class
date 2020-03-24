@@ -73,4 +73,5 @@ FROM
     orders
 GROUP BY 
     ODATE;
-    
+
+--DOWL MY SQL Workbetch
