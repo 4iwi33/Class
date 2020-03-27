@@ -1,5 +1,3 @@
-<html>
-
 <?php
 $link = mysqli_connect("localhost", "root", "")
     or die(" conection with server not complete");
@@ -18,7 +16,9 @@ if (!empty($_POST['text'] && !empty($_POST['name']))) {
         $link,
         $sql
     );
+    header('Location: my.php');
 }
+
 
 $query = "SELECT * FROM gosttable";
 $result = mysqli_query($link, $query)
@@ -43,5 +43,3 @@ mysqli_close($link);
     <input type="submit" value="ok">
 
 </form>
-
-</html>
