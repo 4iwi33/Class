@@ -22,5 +22,5 @@ echo speed_test("sqrt", 20);
 echo "<br>";
 echo speed_test("my_sqrt", 20);
 echo "<br>";
-echo sqrt2("sqrt2", 20);
+echo speed_test("sqrt2", 20);
 ?>
