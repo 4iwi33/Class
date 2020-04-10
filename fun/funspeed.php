@@ -18,7 +18,7 @@ function my_sqrt($x)
 
 function sqrt2($x)
 {
-    return $x ** 0.5;
+    return $x*0.5;
 }
 
 
