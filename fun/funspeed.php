@@ -12,7 +12,15 @@ function speed_test($fun, $arg, $n=100000){
 function my_sqrt($x){
     return pow($x, .5);
 }
+
+function sqrt2($x){
+    return $x ** 0.5;
+}
+
+
 echo speed_test("sqrt", 20);
 echo "<br>";
 echo speed_test("my_sqrt", 20);
+echo "<br>";
+echo sqrt2("sqrt2", 20);
 ?>
