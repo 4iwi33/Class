@@ -16,7 +16,7 @@ function my_sqrt($x)
     return pow($x, .5);
 }
 
-function my_sqrt2($x)
+function sqrt2($x)
 {
     return $x ** 0.5;
 }
@@ -26,4 +26,5 @@ echo speed_test("sqrt", 20);
 echo "<br>";
 echo speed_test("my_sqrt", 20);
 echo "<br>";
-echo speed_test('my_sqrt2', 20);
+echo speed_test("sqrt2", 20);
+?>

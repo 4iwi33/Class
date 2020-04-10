@@ -26,6 +26,9 @@ function speed_test($fun, $arg, $n = 100000)
     return $time2 - $time1;
 }
 
+$a1 = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+
 function test1($array)
 {
     return array_map(function ($x) {
