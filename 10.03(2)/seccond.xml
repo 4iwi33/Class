@@ -19,21 +19,15 @@
     <text>Hello</text>
     <name>bro</name>
     <date>10.03.20 08-03-27</date>
-<<<<<<< HEAD
-=======
 </msg>
 <msg>
     <text></text>
     <name></name>
     <date>13.03.20 06-03-06</date>
->>>>>>> 909786c6348464a6d99b45b5dd4eeaaf0b62aabd
 </msg>    
 <msg>
         <text></text>
         <name></name>
-<<<<<<< HEAD
-        <date>13-03-2020 12:49:40</date>
-=======
         <date>13-03-2020 18:42:10</date>
     </msg>    
 <msg>
@@ -55,5 +49,9 @@
         <text></text>
         <name></name>
         <date>13-03-2020 18:43:53</date>
->>>>>>> 909786c6348464a6d99b45b5dd4eeaaf0b62aabd
     </msg>
+<msg>
+    <text></text>
+    <name></name>
+    <date>12.04.20 10-04-54</date>
+</msg>
