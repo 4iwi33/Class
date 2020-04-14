@@ -1,5 +1,6 @@
 <pre>
 <?php
+// "array_map" — Применяет callback-функцию ко всем элементам указанных массивов
 function cube($n)
 {
     return $n * $n * $n;
