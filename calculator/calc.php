@@ -1,6 +1,7 @@
 <?php
 include ("Calculator.php");
 
+//создали экземпляр класса
 $calc = new Calculator(
     $_POST['a'],
     $_POST['b']
