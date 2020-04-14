@@ -6,11 +6,11 @@ function speed_test($fun, $arg, $n=100000)
     { 
         $fun($arg);
     } 
-    $time2 = microtime(TRUE);
+    $time2 = microtime(TRUE); //"microtime" -- Возвращает метку времени с микросекундами
 
     return $time2 - $time1;
-
 }
+
 function my_sqrt($x)
 {
     return pow($x, .5);
@@ -20,7 +20,6 @@ function sqrt2($x)
 {
     return $x*0.5;
 }
-
 
 echo speed_test("sqrt", 20);
 echo "<br>";
