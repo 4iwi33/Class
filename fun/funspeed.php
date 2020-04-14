@@ -8,7 +8,7 @@ function speed_test($fun, $arg, $n=100000)
     } 
     $time2 = microtime(TRUE); //"microtime" -- Возвращает метку времени с микросекундами
 
-    return $time2 - $time1;
+    return $time2 - $time1; // Конструкция "rerurn" возвращает значения,
 }
 
 function my_sqrt($x)
