@@ -26,7 +26,6 @@ echo $a->HTML();
 
 echo "<br>";
 
-
 echo $a
     ->clear()
     ->href('https://www.onliner.by')
