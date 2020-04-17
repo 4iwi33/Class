@@ -45,4 +45,13 @@ echo $h
     ->style('color:red')
     ->html();
 
+$table = new Table();
+echo $table->clear()
+    ->style('border: 1px solid black')
+    ->data([
+        [1, 2, 3],
+        [4, 5, 6]
+    ])
+    ->html();
+
 //<a href='https://www.tut.by' class='btn' id='b1' style='color:red'>Текст</a>
