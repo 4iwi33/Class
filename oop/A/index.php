@@ -14,13 +14,36 @@ echo $a->clear()
     ->style('color:red')
     ->HTML();
 
+echo "<br>";
 
-    $a->clear();
-    $a->href('http://www.tut.by');
-    $a->innerText('Текст');
-    $a->class('btn');
-    $a->id('b1');
-    $a->style('color:red');
-    echo $a->HTML();
+$a->clear();
+$a->href('http://www.tut.by');
+$a->innerText('Текст');
+$a->class('btn');
+$a->id('b1');
+$a->style('color:red');
+echo $a->HTML();
+
+echo "<br>";
+
+
+echo $a
+    ->clear()
+    ->href('https://www.onliner.by')
+    ->innerText('onliner')
+    ->html();
+
+echo "<br>";
+
+$h = new H(1);
+
+echo $h
+    // ->clear()
+    // ->level()
+    ->innerText('header')
+    ->class('btn')
+    ->id('b1')
+    ->style('color:red')
+    ->html();
 
 //<a href='https://www.tut.by' class='btn' id='b1' style='color:red'>Текст</a>
