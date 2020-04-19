@@ -1,15 +1,12 @@
 <?php
-class A
+
+class B
 {
-    protected $innerText;
-    protected $href;
-    protected $id;
-    protected $class;
-    protected $style;
+    protected $b;
 
     public function __construct()
     {
-        $this->clear;
+        $this->b;
     }
 
     public function clear(): self
@@ -17,8 +14,15 @@ class A
             $this->href =
             $this->class =
             $this->id =
+            $this->b =
             $this->style =
             $this->innerText = '';
+        return $this;
+    }
+
+    public function b(string $b): self
+    {
+        $this->b = " b='$b'";
         return $this;
     }
 
@@ -33,7 +37,6 @@ class A
         $this->id = " id='$id'";
         return $this;
     }
-
 
     public function href(string $href): self
     {
@@ -52,9 +55,8 @@ class A
         $this->style = " style='$style'";
         return  $this;
     }
-
     public function HTML()
     {
-        return "<a$this->href$this->class$this->id$this->style>$this->innerText</a>";
+        return "<a$this->href$this->class$this->id$this->style>$this->innerText$this->b</a>";
     }
 }

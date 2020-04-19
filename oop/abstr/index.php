@@ -5,13 +5,13 @@ $a = new Student("Petr", "Ivanov");
 echo $a->inrtoduce();
 echo $a->learn();
 
-echo "<br>";
+echo "<hr>";
 
 $b = new Teacher("Ivan", "Petrov");
 echo $b->inrtoduce();
 echo $b->teach();
 
-echo "<br>";
+echo "<hr>";
 
 $c = new Engineer("Vasiliy", "Vasiliye");
 echo $c->inrtoduce() . $c->work() . $c->learn();

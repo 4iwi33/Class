@@ -34,7 +34,6 @@ class A
         return $this;
     }
 
-
     public function href(string $href): self
     {
         $this->href = " href='$href'";
@@ -55,6 +54,6 @@ class A
 
     public function HTML()
     {
-        return "<a$this->href$this->class$this->id$this->style>$this->innerText</a>";
+        return "<a$this->href$this->class$this->id$this->style>$this->innerText$this->i</a>";
     }
 }

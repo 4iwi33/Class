@@ -54,4 +54,7 @@ echo $table->clear()
     ])
     ->html();
 
+    
+
+
 //<a href='https://www.tut.by' class='btn' id='b1' style='color:red'>Текст</a>
