@@ -1,6 +1,6 @@
 <?php
 
-class Teacher extends Person
+class Teacher extends Person // "extends" - Наследование 
 {
     public function teach()
     {
