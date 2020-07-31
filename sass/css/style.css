@@ -1,3 +1,17 @@
-body{
-    background-color:royalblue;
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(red), to(#99a52a));
+  background-image: -webkit-linear-gradient(red, #99a52a);
+  background-image: -moz-linear-gradient(red, #99a52a);
+  background-image: -o-linear-gradient(red, #99a52a);
+  background-image: linear-gradient(red, #99a52a);
+}
+
+.table th {
+  background-color: #fff;
+}
+
+.table td {
+  background-color: yellow;
+  width: 50px;
+  height: 150px;
 }

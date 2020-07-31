@@ -1,0 +1,19 @@
+$colortd: yellow;
+$width: 100px;
+$high: 100px;
+
+body {
+    background-image: linear-gradient(red, rgb(153, 165, 42));
+}
+
+.table {
+    th {
+        background-color: #fff;
+    }
+
+    td {
+        background-color: $colortd;
+        width: $width / 2;
+        height: $high +50px;
+    }
+}
